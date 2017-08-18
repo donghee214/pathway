@@ -1,18 +1,27 @@
 import React from 'react';
 import '../styles/index.scss';
-import Nav from './nav.jsx'
-import Modal1 from './tutorial1.jsx';
+import Nav from './nav_emily.jsx'
 import Body from './body/body.jsx'
-import Nav from './Nav.jsx'
 
 export default class App extends React.Component {
+    constructor(props){
+    super(props)
+    this.state = {
+      showNotificationBox: false,
+      bodyDisplay: '',
+    }
+  }
+
+  changeBody(choice){
+    this.setState({bodyDisplay: choice})
+  }
+
+
   render() {
     return (
       <div>
-        <Nav />
-        <Modal1/>
-      	<Nav />
-        <Body/>
+      	<Nav changeBody={this.changeBody.bind(this)}/>
+        <Body bodyDisplay={this.state.bodyDisplay}/>
       </div>
     )
   }

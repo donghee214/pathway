@@ -24,7 +24,7 @@ nav {
 
 .navEl {
 	height: inherit;
-	width: 70%;
+	width: 74%;
 	display: flex;
     align-items: center;
     position: relative;
@@ -126,8 +126,6 @@ h2 a:hover{
 	color:#006AC3;
 }
 
-//make the line appear before the element
-
 h2 a:hover:before {
 	visibility: visible;
 	transform:scaleX(1);
@@ -182,6 +180,7 @@ h2 a:hover:before {
 
 a {
 	color: black; 
+  cursor: pointer;
 }
 
 html{
@@ -515,4 +514,3 @@ input:focus ~ .highlight {
 	from { background:#5264AE; }
   to 	{ width:0; background:transparent; }
 }
->>>>>>> b7bf99b3f31c39469261b7f3fc1fbbbe27ef36c0

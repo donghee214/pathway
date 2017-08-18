@@ -13,17 +13,17 @@ export default class Body extends React.Component {
 	}
 
 	renderBody(){
-		if (this.state.fill === "MyProj"){
+		if (this.props.bodyDisplay === "MyProjects"){
 			return(<MyProj />)
 		}
 
-		if(this.state.fill === "MyProj"){
+		if(this.props.bodyDisplay === "Find"){
 			return (<Find />)
 		}
-		if (this.state.fill === "MyProj"){
+		if (this.props.bodyDisplay === "MyTeam"){
 			return <MyTeam />
 		}
-		
+
 
 	
 
