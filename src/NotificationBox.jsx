@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/index.scss';
+import '../styles/index_emily.scss';
 import Notif from './Notif.jsx'
 import profileImg from '../styles/images/Profile.png';
 // import notifBoxImg from '../styles/images/notificationBox.svg';
