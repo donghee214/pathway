@@ -1,0 +1,23 @@
+<svg width="344" height="558" viewBox="0 0 344 558" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Union</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="matrix(2 0 0 2 5752 -23950)">
+<g id="Union" filter="url(#filter0_d)">
+<use xlink:href="#path0_fill" transform="translate(-2873 11976)" fill="#FFFFFF"/>
+<use xlink:href="#path1_stroke" transform="translate(-2873 11976)" fill="#E0E0E0"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="-2876" y="11975" width="172" height="279" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="2" dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_fill" fill-rule="evenodd" d="M 162 19.2871L 162 0L 134.999 19.2871L 5 19.2871C 2.23853 19.2871 0 21.5254 0 24.2871L 0 264C 0 266.762 2.23853 269 5 269L 157 269C 159.761 269 162 266.762 162 264L 162 20.3018L 162 19.2871Z"/>
+<path id="path1_stroke" d="M 162 0L 162.375 0L 162.375 -0.728715L 161.782 -0.305145L 162 0ZM 134.999 19.2871L 134.999 19.6621L 135.119 19.6621L 135.217 19.5923L 134.999 19.2871ZM 161.625 0L 161.625 19.2871L 162.375 19.2871L 162.375 0L 161.625 0ZM 135.217 19.5923L 162.218 0.305145L 161.782 -0.305145L 134.781 18.982L 135.217 19.5923ZM 5 19.6621L 134.999 19.6621L 134.999 18.9121L 5 18.9121L 5 19.6621ZM 0.375 24.2871C 0.375 21.7325 2.44562 19.6621 5 19.6621L 5 18.9121C 2.03143 18.9121 -0.375 21.3183 -0.375 24.2871L 0.375 24.2871ZM 0.375 264L 0.375 24.2871L -0.375 24.2871L -0.375 264L 0.375 264ZM 5 268.625C 2.44562 268.625 0.375 266.555 0.375 264L -0.375 264C -0.375 266.969 2.03143 269.375 5 269.375L 5 268.625ZM 157 268.625L 5 268.625L 5 269.375L 157 269.375L 157 268.625ZM 161.625 264C 161.625 266.555 159.554 268.625 157 268.625L 157 269.375C 159.969 269.375 162.375 266.969 162.375 264L 161.625 264ZM 161.625 20.3018L 161.625 264L 162.375 264L 162.375 20.3018L 161.625 20.3018ZM 161.625 19.2871L 161.625 20.3018L 162.375 20.3018L 162.375 19.2871L 161.625 19.2871Z"/>
+</defs>
+</svg>
