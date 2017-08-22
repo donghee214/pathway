@@ -38,4 +38,4 @@ export default class Resources extends React.Component {
       </div>
     )
   }
-}
+}4
