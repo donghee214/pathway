@@ -21,7 +21,7 @@ export default class App extends React.Component {
     return (
       <div>
       	<Nav changeBody={this.changeBody.bind(this)}/>
-        <Body bodyDisplay={this.state.bodyDisplay}/>
+        <Body changeBody={this.changeBody.bind(this)} bodyDisplay={this.state.bodyDisplay}/>
       </div>
     )
   }

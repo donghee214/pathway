@@ -20,7 +20,6 @@ export default class App extends React.Component {
 	renderNotification(){
 		if (this.state.showNotificationBox == true){
 			return (<NotificationBox />);
-			// add a statement here that makes the bell turn blue
 		}
 		else if(this.state.showNotificationBox == false){
 			return (null);
@@ -43,7 +42,6 @@ export default class App extends React.Component {
       			</div>
       			{this.renderNotification()}
       			<img className="profile" src={profileImg} />
-      			
       		</div>
       	</div>
       </nav>

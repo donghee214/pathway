@@ -2,26 +2,31 @@ import React from 'react';
 import '../../styles/index.scss';
 import MyProj from './MyProj.jsx';
 import MyTeam from './MyTeam.jsx';
-import Find from './Find.jsx'
+import Find from './Find.jsx';
+import Tree from './tree.jsx';
 
 export default class Body extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			fill: "MyProj"
+			treeInfo: [""],
 		}
 	}
 
 	renderBody(){
 		if (this.props.bodyDisplay === "MyProjects"){
-			return(<MyProj />)
+			return(<MyProj changeBody={this.props.changeBody}/>)
 		}
 
 		if(this.props.bodyDisplay === "Find"){
-			return (<Find />)
+			return (<Find changeBody={this.props.changeBody}/>)
 		}
 		if (this.props.bodyDisplay === "MyTeam"){
-			return <MyTeam />
+			return <MyTeam changeBody={this.props.changeBody}/>
+		}
+
+		if (this.props.bodyDisplay === "ViewTree"){
+			return (<Tree />)
 		}
 
 
