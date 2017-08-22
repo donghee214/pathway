@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/index.scss';
+import '../../styles/index_emily.scss';
 import person1 from '../images/person1.png'
 import person2 from '../images/person2.png'
 import person3 from '../images/person3.png'
