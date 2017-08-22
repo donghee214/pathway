@@ -38,7 +38,7 @@ export default class Card extends React.Component {
 		    			getyourResearch.png
 		    		</div>
 		        </div>
-		        <div className="viewTree">
+		        <div onClick={() => {this.props.changeBody("ViewTree")}}  className="viewTree">
 		        	View
 		        </div>
 		      </div>

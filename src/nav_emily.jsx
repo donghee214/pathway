@@ -20,7 +20,6 @@ export default class App extends React.Component {
 	renderNotification(){
 		if (this.state.showNotificationBox == true){
 			return (<NotificationBox />);
-			// add a statement here that makes the bell turn blue
 		}
 		else if(this.state.showNotificationBox == false){
 			return (null);
@@ -34,16 +33,15 @@ export default class App extends React.Component {
       			<h1>Pathway</h1>
       		</div>
       		<div className="options">
-      			<h2  className="pages"><a href="#">My Projects</a></h2>
-      			<h2 className="pages"><a href="#">My Team</a></h2>
-      			<h2 className="pages"><a href="#">Find Projects</a></h2>
+      			<h2 className="pages"><a onClick = {()=>{this.props.changeBody("MyProjects")}}>My Projects</a></h2>
+      			<h2 className="pages"><a onClick ={() => this.props.changeBody("MyTeam")}>My Team</a></h2>
+      			<h2 className="pages"><a onClick={()=> {this.props.changeBody("Find")}}>Find Projects</a></h2>
       			<h2 className="pages"><a href="#">Resources</a></h2>
       			<div onMouseDown={this.showNotif.bind(this)}>
       				<Notif />
       			</div>
       			{this.renderNotification()}
       			<img className="profile" src={profileImg} />
-      			
       		</div>
       	</div>
       </nav>

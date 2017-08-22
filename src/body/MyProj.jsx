@@ -16,10 +16,9 @@ export default class MyProj extends React.Component {
 	    	</div>
 
 	      <div className="cardView">
-	        <Card />
-	        <Card />
-	        <Card />
-	        <Card />
+	        <Card changeBody={this.props.changeBody}/>
+	    
+
 	      </div>
       </div>
     )

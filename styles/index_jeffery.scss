@@ -1,0 +1,197 @@
+@import 'main';
+@import 'common/button';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i');
+
+* {
+	background: white;
+}
+
+.resources {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-color: #333;
+	margin: 1em;
+	width: 70%;
+	align-items: center;
+	margin: auto;
+}
+
+
+.title {
+	font-size: 2.5em;
+}
+
+.subtitle {
+	font-size: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.resourceLink {
+	margin-bottom: 0.5em;
+	margin-top: 0;
+}
+
+.resourceLink a{
+	color: #56CCF2;
+	font-size: 1.25em;
+	text-decoration: none;
+}
+
+.resourceLink a:hover {
+	color: #ABEBFF;
+}
+
+.desc {
+	font-size: 0.85em;
+	line-height: 135%;
+	margin: 0;
+	padding-bottom: 0.8em;
+}
+
+.date, .name {
+	font-size: .8em;
+	color: #828282;
+	text-align: inherit;
+	line-height: 150%;
+}
+
+.date {
+	margin: 0;
+}
+
+.name {
+	padding-top: 0;
+	margin-top: 0.4em;
+}
+
+.name a{
+	text-decoration: none;
+	color: #56CCF2;
+}
+
+.name a:hover{
+	color: #ABEBFF;
+}
+
+.block {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1em;
+}
+
+.meta {
+	line-height: 75%;
+	text-align: right;
+	position: relative;
+	right: 0;
+	padding: 0;
+	width: 30%;
+}
+
+.info {
+	padding-bottom: 1%;
+	padding-right: 1em;
+	width: 70%;
+}
+
+.book {
+	width: 25%;
+}
+
+.bookLink a{
+	text-decoration: none;
+	color: #56CCF2;
+}
+
+.bookLink a:hover{
+	color: #ABEBFF;
+}
+
+.author {
+	font-size: .8em;
+	color: #828282;
+}
+
+.modalContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9998;
+	background: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+.modal {
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #333333;
+	z-index: 9998;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.4);
+    padding-top: 50px;
+    padding-bottom: 35px;
+	border-radius: 10px;
+	top: 5%;
+}
+
+.modal > button {
+	background-color: #006AC3;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.1em;
+	color: white;
+	font-weight: 300;
+	padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 50px;
+    border: none;
+  	display: block;
+  	margin: auto;
+}
+
+.modal > button:hover {
+	background-color: #75BDFA;
+}
+
+.modalTitle {
+	font-size: 2em;
+	margin-top: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.modalDesc{
+	font-size: 1em;
+	display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.modal > img {
+	display: block;
+    margin: auto;
+    padding-bottom: 30px;
+    width: 80%;
+}
+
+.modal > a {
+	color: #006AC3;
+	text-decoration: none;
+	font-size: 1em;
+	display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    cursor: pointer;
+}

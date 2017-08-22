@@ -7,26 +7,24 @@
 	color: #FFFFFF;
 }
 
-body {
-	margin: 0;
-}
-
 nav {
 	z-index: 1;
 	font-family: 'Roboto', sans-serif;
-	display: flex;
-	justify-content: center;
-	height: 130px;
-	width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 130px;
+    width: 100%;
     background-color: white;
     box-shadow: -1px 2px 5px #bec2c5;
     position: fixed;
     top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .navEl {
 	height: inherit;
-	width: 70%;
+	width: 74%;
 	display: flex;
     align-items: center;
     position: relative;
@@ -36,7 +34,7 @@ nav {
 	height: inherit;
     align-items: center;
     display: flex;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 .options {
@@ -45,7 +43,7 @@ nav {
 	position: absolute;
 	right: 0;
 	justify-content: space-around;
-	font-size: 0.58em;
+	font-size: 1.1em;
 	height: inherit;
 	align-items: center;
 }
@@ -207,9 +205,6 @@ h2 a:hover:before {
 a {
 	color: #0083f1; 
 }
-
-// profile code *********
-
 
 
 .profileContainer {

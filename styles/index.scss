@@ -24,7 +24,7 @@ nav {
 
 .navEl {
 	height: inherit;
-	width: 70%;
+	width: 74%;
 	display: flex;
     align-items: center;
     position: relative;
@@ -52,7 +52,7 @@ nav {
 	width: 24px;
 	height: 42px;
 	fill: grey;
-	// transition the color in
+
 	transition: fill 0.3s ease-in-out;
 	-webkit-transition: fill 0.3s ease-in-out;
 	position: relative;
@@ -126,8 +126,6 @@ h2 a:hover{
 	color:#006AC3;
 }
 
-//make the line appear before the element
-
 h2 a:hover:before {
 	visibility: visible;
 	transform:scaleX(1);
@@ -182,6 +180,7 @@ h2 a:hover:before {
 
 a {
 	color: black; 
+  cursor: pointer;
 }
 
 html{
@@ -227,7 +226,7 @@ p{
     width: 74%;
     height: 100%;
     position: absolute;
-    margin-top: 15vh;
+    margin-top: 130px;
 }
 
 .Nav{
@@ -314,16 +313,82 @@ position: relative;
 }
 
 .exit{
-	position: absolute;
+    position: absolute;
     fill: #767676;
-    right: 5%;
+    right: 10px;
     cursor: pointer;
-   	transition: fill 0.2s linear;
+    transition: fill 0.2s linear;
+    top: 10px;
 }
 
 .exit:hover{
 	fill: #BDBDBD;
 	transition: none;
+}
+
+.button{
+    position: relative;
+    padding: 2.5% 10% 2.5% 10%;
+    background-color: #C4C4C4;
+    border-radius: 35px;
+    color: white;
+    font-size: 0.9em;
+    font-family: 'roboto';
+    color: #F7F3F3;
+    font-weight: 100;
+    transition: background-color 0.2s linear;
+    cursor: pointer;
+    width: 40%;
+    text-align: center;
+    margin: 0 3% 0 0;
+}
+
+
+.buttonClicked{
+  background-color: #0D78D2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .button:active{
+  background-color: #0D78D2;
+}
+ */
+
+.createStep{
+    position: relative;
+    width: 10%;
+}
+
+.buttonGroup{
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin-top: 1.5em;
 }
 
 .viewTree{
@@ -362,65 +427,124 @@ position: relative;
     margin-top: 7%;
 }
 
+.treeContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.Created{
+      text-align: center;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.25);
+    padding: 1em 2em 1em 2em;
+    /* margin-bottom: 7.5%; */
+}
+
+.treeContent{
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+
+.backgroundDark{
+  background-color: rgba(0,0,0,0.45);
+  position: fixed;
+  height: 100vh;
+  z-index: 1;
+  top: 0;
+  width: 100vw;
+}
+
+
+.modal{
+    background-color: white;
+    position: fixed;
+    top: 10vh;
+    left: 30vw;
+    padding: 1.2vh 3vw 3.2vh 3vw;
+    overflow: auto;
+    height: 80vh;
+    width: 33vw;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.25);
+}
+
+.step{
+    color: #333333;
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+}
+
+.stage{
+  width: 100%;
+  height: 15%;
+  -webkit-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  background-color: white;
+  padding: 0.3em 2em 0.3em 2em;
+  position: relative;
+}
+
+
+.add{
+  cursor: pointer;
+}
+.stageTitle{
+    font-size: 1.4em;
+    margin: 0.5em 0 0.25em 0;
+    display: inline-block;
+}
+
+.stageText{
+    width: 70%;
+    margin-top: 0em;
+}
+
+.down{
+      right: 1em;
+    bottom: 0.7em;
+    display: inline;
+    position: absolute;
+}
+
+.tag{
+      background-color: #C4C4C4;
+    display: inline;
+    padding: 0.5em;
+    border-radius: 5px;
+    font-family: 'roboto';
+    /* right: 0; */
+    position: relative;
+    left: 20%;
+    top: 0;
+    color: white;
+}
 
 
 
 
 
+.privacySetting{
+  margin: 4% 0 2% 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.privacy{
+      border-radius: 5px;
+    font-family: roboto;
+    width: 100%;
+}
 
 .group 			  { 
 	position: relative;
@@ -429,7 +553,7 @@ position: relative;
 }
 input {
      font-size: 18px;
-    padding: 10px 0px 10px 5px;
+    padding: 8px 0px 8px 5px;
     display: block;
     width: 100%;
     border: none;
@@ -440,7 +564,7 @@ input:focus 		{ outline:none; }
 /* LABEL ======================================= */
 label 	{
   color:#999; 
-  font-size:18px;
+  font-size:14px;
   font-weight:300;
   position:absolute;
   pointer-events:none;
@@ -454,8 +578,8 @@ label 	{
 
 /* active state */
 input:focus ~ label, input:valid ~ label 		{
-  top:-20px;
-  font-size:14px;
+  top:-13px;
+  font-size:11px;
   color:#0D78D2;
 }
 
@@ -516,3 +640,56 @@ input:focus ~ .highlight {
   to 	{ width:0; background:transparent; }
 }
 
+.newStepForm{
+  margin-top: 6%;
+}
+
+.gallery{
+  font-size: 1.2em;
+  margin-bottom: 0.4em;
+}
+
+.uploadImage{
+    width: 34%;
+    height: 17%;
+    position: relative;
+    border: 1px #C4C4C4 solid;
+    margin-top: 4%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.upload{
+      height: 30%;
+    width: 30%;
+}
+
+.blue{
+  color: #0D78D2;
+}
+
+.finishButton{
+    width: 60%;
+    display: flex;
+    /* right: 0; */
+    /* position: relative; */
+    /* justify-content: flex-end; */
+    float: right;
+    margin-top: 6%;
+}
+
+.backblue{
+  background-color: #0D78D2;
+}
+
+.line{
+    width: 1px;
+    height: 100px;
+    /* left: 50%; */
+    position: relative;
+    background-color: #333333;
+    top: 0;
+}
