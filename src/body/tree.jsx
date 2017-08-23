@@ -14,11 +14,18 @@ export default class Tree extends React.Component {
 		super(props)
 		this.state = {
       boxes: [],
+      boxesOptions: [],
+      boxesTag:[],
       currentInfo: [],
 			showNotificationBox: false,
       showModal: false,
 		}
 	}
+
+  addNewBoxOption(newBox){
+    this.setState({ boxesOptions:this.state.boxesOptions.concat(newBox)})
+
+  }
 
   newStep(){
     this.setState ({ showModal: !this.state.showModal})
@@ -26,14 +33,27 @@ export default class Tree extends React.Component {
 
   renderNewBoxes(boxInfo){
     if (boxInfo[0] === true){
-        this.state.boxes.push(<Stage currentInfo={boxInfo}/>)
-        this.state.boxes.push(<div className="line"/>)
+        this.state.boxes.push(boxInfo)
+        this.giveKeys()
     }
     else{
       alert("wtf")
     }
   }
   
+
+  giveKeys(){
+      const boxesList = this.state.boxes.map((box) =>
+        <Stage key={box} currentInfo={box} />
+    );
+    this.setState({boxesTag: boxesList})
+  }
+
+  // renderKeyedBoxes(boxesList){
+  //   for (var i=0; i<boxesList.length); i++){
+
+  //   }
+  // }
   render() {
     return (
      <div>
@@ -55,15 +75,15 @@ export default class Tree extends React.Component {
             You can look at sample processes in this project and play around with the research tool. Feel free to delete this project when you feel comfortable using the tool or you can choose to keep it as a reference.
           </p>
           <div className = "treeContainer">
-            <div className = "Created">
+            <div style={{zIndex:1}} className = "Created">
               <p className="treeContent">Project created on</p>
               <h2 className="treeContent">04/15/16</h2>
             </div>
-            <div className="line">
+            <div className="line" style={{zIndex:0}}>
             </div>
-            {this.state.boxes}
+            {this.state.boxesTag}
             <Add showModal={this.newStep.bind(this)}/>
-            {this.state.showModal ? <NewStepModal renderNewBoxes={this.renderNewBoxes.bind(this)} newStepToggle={this.newStep.bind(this)}/> : null}
+            {this.state.showModal ? <NewStepModal boxesOptions={this.state.boxesOptions} addNewBoxOption={this.addNewBoxOption.bind(this)} renderNewBoxes={this.renderNewBoxes.bind(this)} newStepToggle={this.newStep.bind(this)}/> : null}
           </div>
         
         </div>
