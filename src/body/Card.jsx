@@ -31,11 +31,9 @@ export default class Card extends React.Component {
 		        	<p className="uploadTitle">
 		        		Recent Uploads
 		        	</p>
-		        	<div className="link">
-		        		sadtimez.docs
-		    		</div>
-		    		<div className="link">
-		    			getyourResearch.png
+		        	<div className="docLinks">
+		        	<a href="#">sadtimez.docs</a><br/>
+		    		<a href="#">getyourResearch.png</a>
 		    		</div>
 		        </div>
 		        <div onClick={() => {this.props.changeBody("ViewTree")}}  className="viewTree">

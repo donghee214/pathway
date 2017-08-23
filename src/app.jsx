@@ -13,11 +13,6 @@ export default class App extends React.Component {
     }
   }
 
-  changeBody(choice){
-    this.setState({bodyDisplay: choice})
-  }
-
-
   render() {
     return (
       <div>

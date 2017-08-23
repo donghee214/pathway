@@ -10,7 +10,6 @@ export default class App extends React.Component {
 		super(props)
 		this.state = {
 			showNotificationBox: false,
-
 		}
 	}
 	showNotif(){
@@ -25,6 +24,7 @@ export default class App extends React.Component {
 			return (null);
 		}
 	}
+
   render() {
     return (
       <nav>

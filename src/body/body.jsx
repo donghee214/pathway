@@ -10,9 +10,10 @@ export default class Body extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			treeInfo: [""],
+			treeInfo: [""]
 		}
 	}
+
 
 	renderBody(){
 		if (this.props.bodyDisplay === "MyProjects"){
