@@ -1,7 +1,8 @@
 import React from 'react';
-import '../styles/index.scss';
+
 import Nav from './nav_emily.jsx'
-import Body from './body/body.jsx'
+import Body from './body/body.jsx';
+import '../styles/index.scss';
 
 export default class App extends React.Component {
     constructor(props){

@@ -1,4 +1,6 @@
 import React from 'react';
+import '../../styles/index_emily.scss';
+import exit from '../images/exit.svg'
 import '../../styles/index.scss';
 
 export default class Card extends React.Component {

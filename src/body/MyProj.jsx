@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/index.scss';
+import '../../styles/index_emily.scss';
 import Card from './Card.jsx'
 
 export default class MyProj extends React.Component {

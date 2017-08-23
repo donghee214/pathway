@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/index.scss';
+import '../../styles/index_emily.scss';
 import MyProj from './MyProj.jsx';
 import MyTeam from './MyTeam.jsx';
 import Find from './Find.jsx';
