@@ -12,9 +12,10 @@ export default class Tree extends React.Component {
 		this.state = {
 			showNotificationBox: false,
       stage: true,
+      methodLocation: '',
       name: '',
       email: '',
-      stepInfo: ['','','','',''],
+      stepInfo: ['','','','','',[]],
       
 		}
 
@@ -36,19 +37,30 @@ export default class Tree extends React.Component {
            items[1] = this.refs.stepName.value
            items[2] = this.refs.description.value
            items[3] = this.refs.privacy.value
+           items[4] = ''
            // const newArray = this.state.boxesOptions;
            // newArray.push(items[1])
            // alert(this.state.boxesOptions)
            // this.setState({boxesOptions: newArray})
            // alert(this.state.boxesOptions)
            this.props.addNewBoxOption(items[1])
-           
            this.props.renderNewBoxes(this.state.stepInfo)
            this.props.newStepToggle()}
-      }
-    else(){
-
+    
+    else{
+        items[0] = this.state.stage
+        items[1] = this.refs.stepName.value
+        items[2] = this.refs.description.value
+        items[3] = this.refs.privacy.value
+        items[4] = this.state.methodLocation
+        this.props.renderNewBoxes(items)
+        this.props.newStepToggle()
     }
+  }
+
+  getMethodLocation(location){
+    this.setState({methodLocation: location})
+  }
   render() {
     return (
      <div className="backgroundDark">
@@ -71,7 +83,7 @@ export default class Tree extends React.Component {
               Method
             </div>
           </div>
-          {this.state.stage ? null : <AdditionalOption boxesStringList={this.props.boxesOptions}/>}
+          {this.state.stage ? null : <AdditionalOption getMethodLocation={this.getMethodLocation.bind(this)} boxesStringList={this.props.boxesOptions}/>}
           <div className="group newStepForm">
               <input ref="stepName" type="text" required />
               <span className="highlight"></span>

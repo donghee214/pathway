@@ -3,6 +3,7 @@ import '../../styles/index_emily.scss';
 import MyProj from './MyProj.jsx';
 import MyTeam from './MyTeam.jsx';
 import Find from './Find.jsx';
+import Resources from '.././Resources.jsx'
 import Tree from './tree.jsx';
 
 export default class Body extends React.Component {
@@ -23,6 +24,10 @@ export default class Body extends React.Component {
 		}
 		if (this.props.bodyDisplay === "MyTeam"){
 			return <MyTeam changeBody={this.props.changeBody}/>
+		}
+
+		if (this.props.bodyDisplay === "Resources"){
+			return <Resources />
 		}
 
 		if (this.props.bodyDisplay === "ViewTree"){

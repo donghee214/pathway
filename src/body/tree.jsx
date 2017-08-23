@@ -37,14 +37,24 @@ export default class Tree extends React.Component {
         this.giveKeys()
     }
     else{
-      alert("wtf")
+      for (var i =0; i<this.state.boxes.length; i++){
+          if (this.state.boxes[i][1] == boxInfo[4])
+          {
+            const temp = this.state.boxes
+            temp[i][5].push(boxInfo)
+            this.setState({boxes: temp})
+            this.giveKeys()
+            console.log(this.state.boxes[i][5])
+          }
+      }
     }
   }
   
 
   giveKeys(){
       const boxesList = this.state.boxes.map((box) =>
-        <Stage key={box} currentInfo={box} />
+        <Stage methods={box[5]} key={box[1]} currentInfo={box}>
+          </Stage>
     );
     this.setState({boxesTag: boxesList})
   }

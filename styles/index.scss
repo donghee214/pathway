@@ -538,6 +538,7 @@ position: relative;
     position: relative;
     left: 2%;
     top: -0.5em;
+    z-index: 2;
     color: white;
 }
 
@@ -703,3 +704,20 @@ input:focus ~ .highlight {
     top: 0;
 }
 
+.method{
+    display: inline-block;
+    position: relative;
+    width: 35%;
+    /* height: 35%; */
+    background-color: white;
+    -webkit-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.25);
+    padding: 1% 2% 1% 2%;
+}
+
+.methodTitle{
+  font-size: 1.2em;
+  margin-bottom: 0.2em;
+  display: inline;
+}
