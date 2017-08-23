@@ -42,8 +42,13 @@ nav {
 	display: flex;
 	position: absolute;
 	right: 0;
+<<<<<<< HEAD
 	justify-content: space-around;
 	font-size: 0.6em;
+=======
+	justify-content: space-between;
+	font-size: 1em;
+>>>>>>> 56ccce727212da4e211d459d88883843cb1f3a1d
 	height: inherit;
 	align-items: center;
 }
@@ -96,6 +101,8 @@ nav {
 .pages {
 	transition: color 0.2s;
 	-webkit-transition: color 0.2s;
+  margin-bottom: 0.4em;
+  font-size: 0.9em;
 }
 
 h2 a {
@@ -447,6 +454,7 @@ position: relative;
     -moz-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.25);
     box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.25);
     padding: 1em 2em 1em 2em;
+    background-color: white;
     /* margin-bottom: 7.5%; */
 }
 
@@ -462,7 +470,7 @@ position: relative;
   background-color: rgba(0,0,0,0.45);
   position: fixed;
   height: 100vh;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   width: 100vw;
 }
@@ -481,6 +489,7 @@ position: relative;
     -webkit-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.25);
     box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.25);
+    z-index: 2;
 }
 
 .step{
@@ -491,6 +500,7 @@ position: relative;
 }
 
 .stage{
+  box-sizing: border-box;
   width: 100%;
   height: 15%;
   -webkit-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.25);
@@ -500,11 +510,14 @@ position: relative;
   background-color: white;
   padding: 0.3em 2em 0.3em 2em;
   position: relative;
+  margin: 5% 0 5% 0;
 }
 
 
 .add{
   cursor: pointer;
+  margin: 5% 0 0% 0;
+  z-index: 1;
 }
 .stageTitle{
     font-size: 1.4em;
@@ -525,15 +538,16 @@ position: relative;
 }
 
 .tag{
-      background-color: #C4C4C4;
+    background-color: #C4C4C4;
     display: inline;
-    padding: 0.5em;
-    border-radius: 5px;
+    padding: 0.4em 1em;
+    border-radius: 13px;
     font-family: 'roboto';
-    /* right: 0; */
+    font-size: 0.6em;
+    font-weight: lighter;
     position: relative;
-    left: 20%;
-    top: 0;
+    left: 2%;
+    top: -0.5em;
     color: white;
 }
 
@@ -692,9 +706,10 @@ input:focus ~ .highlight {
 
 .line{
     width: 1px;
-    height: 100px;
+    height: 99%;
     /* left: 50%; */
-    position: relative;
+    position: absolute;
     background-color: #333333;
     top: 0;
 }
+

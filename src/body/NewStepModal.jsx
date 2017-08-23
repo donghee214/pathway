@@ -2,6 +2,8 @@ import React from 'react';
 import '../../styles/index.scss';
 import Exit from './Exit.jsx'
 import Upload from './upload.jsx'
+import AdditionalOption from './AdditionalOption.jsx'
+
 
 export default class Tree extends React.Component {
 
@@ -12,7 +14,8 @@ export default class Tree extends React.Component {
       stage: true,
       name: '',
       email: '',
-      stepInfo: ['','','','','']
+      stepInfo: ['','','','',''],
+      
 		}
 
 	}
@@ -27,14 +30,25 @@ export default class Tree extends React.Component {
 
   createStage(){
     const items = this.state.stepInfo
-    items[0] = this.state.stage
-    items[1] = this.refs.stepName.value
-    items[2] = this.refs.description.value
-    items[3] = this.refs.privacy.value
-    this.setState({stepInfo: items})
-    this.props.renderNewBoxes(this.state.stepInfo)
-    this.props.newStepToggle()
-  }
+    if (this.state.stage === true)
+       {   
+            items[0] = this.state.stage
+           items[1] = this.refs.stepName.value
+           items[2] = this.refs.description.value
+           items[3] = this.refs.privacy.value
+           // const newArray = this.state.boxesOptions;
+           // newArray.push(items[1])
+           // alert(this.state.boxesOptions)
+           // this.setState({boxesOptions: newArray})
+           // alert(this.state.boxesOptions)
+           this.props.addNewBoxOption(items[1])
+           
+           this.props.renderNewBoxes(this.state.stepInfo)
+           this.props.newStepToggle()}
+      }
+    else(){
+
+    }
   render() {
     return (
      <div className="backgroundDark">
@@ -57,6 +71,7 @@ export default class Tree extends React.Component {
               Method
             </div>
           </div>
+          {this.state.stage ? null : <AdditionalOption boxesStringList={this.props.boxesOptions}/>}
           <div className="group newStepForm">
               <input ref="stepName" type="text" required />
               <span className="highlight"></span>

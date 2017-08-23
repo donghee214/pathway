@@ -22,21 +22,21 @@ export default class Stage extends React.Component {
 	// }
   render() {
     return (
-	     <div className = "stage">	
-	     	<h1 className="stageTitle">
-	     		{this.props.currentInfo[1]}
-	     	</h1>
-	     	<div className="tag">
-	     		Stage
-	     	</div>
-	     	<h2>
-	     		{this.state.conDate}
-	     	</h2>
-	     	<p className="stageText">
-	     		{this.props.currentInfo[2]}
-	     	</p>
-	     	<Down />
-	     </div>
+		     <div className = "stage">	
+		     	<h1 className="stageTitle">
+		     		{this.props.currentInfo[1]}
+		     	</h1>
+		     	<div className="tag">
+		     		Stage
+		     	</div>
+		     	<h2>
+		     		{this.state.conDate}
+		     	</h2>
+		     	<p className="stageText">
+		     		{this.props.currentInfo[2]}
+		     	</p>
+		     	<Down />     	
+		     </div>
     )
   }
 }
