@@ -38,12 +38,12 @@ nav {
 }
 
 .options {
-	width: 560px;
+	width: 675px;
 	display: flex;
 	position: absolute;
 	right: 0;
 	justify-content: space-around;
-	font-size: 0.58em;
+	font-size: 0.6em;
 	height: inherit;
 	align-items: center;
 }
@@ -179,7 +179,7 @@ h2 a:hover:before {
 }
 
 a {
-	color: black; 
+	color: #56CCF2; 
   cursor: pointer;
 }
 
@@ -210,15 +210,16 @@ h2{
 	text-align: left;
 	color: #828282;
 	font-weight: 300;
-	font-size: 0.8em;
+	font-size: 1.5em;
 	margin-top: 0;
+  margin-bottom: 0;
 }
 
 
 p{
 	font-family: 'Roboto', sans-serif;
 	text-align: left;
-	font-size: 0.85em;
+	font-size: 0.9em;
 	color: #333333;
 }
 .AppBody{
@@ -226,7 +227,7 @@ p{
     width: 74%;
     height: 100%;
     position: absolute;
-    margin-top: 130px;
+    margin-top: 160px;
 }
 
 .Nav{
@@ -288,6 +289,7 @@ position: relative;
 .peopleFaces{
 	display: flex;
 	justify-content: flex-start;
+  margin-bottom: 2%;
 }
 
 .cardDescription{
@@ -348,10 +350,12 @@ position: relative;
   background-color: #0D78D2;
 }
 
-
-
-
-
+.docLinks{
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9em;
+  text-align: left;
+  line-height: 1.5em;
+}
 
 
 
@@ -413,12 +417,13 @@ position: relative;
 }
 
 .welcomeTitle{
-	margin-bottom: 0.3%;
+	margin-bottom: 0.6%;
 }
 
 .welcomeDescription{
-	width: 55%;
+	width: 60%;
 	margin-bottom: 5%;
+  line-height: 1.6em;
 }
 
 .suggestedProjects{
