@@ -1,5 +1,4 @@
-import React from 'react';
- 
+import React from 'react'; 
 import Notif from './Notif.jsx'
 import profileImg from '../styles/images/Profile.png';
 import NotificationBox from './NotificationBox.jsx';

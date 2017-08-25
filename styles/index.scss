@@ -214,16 +214,16 @@ h2{
 	text-align: left;
 	color: #828282;
 	font-weight: 300;
-	font-size: 1.5em;
+	font-size: 0.8em;
 	margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 1em;
 }
 
 
 p{
 	font-family: 'Roboto', sans-serif;
 	text-align: left;
-	font-size: 0.9em;
+	font-size: 0.85em;
 	color: #333333;
 }
 .AppBody{
@@ -442,6 +442,7 @@ position: relative;
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin-bottom: 15%;
 }
 
 .Created{
@@ -467,11 +468,19 @@ position: relative;
   background-color: rgba(0,0,0,0.45);
   position: fixed;
   height: 100vh;
-  z-index: 2;
+  z-index: 6;
   top: 0;
+  left: 0;
   width: 100vw;
 }
 
+.methodLine{
+  position: absolute;
+  width: 50%;
+  background-color: #333333;
+  height: 1px;
+  top: 10%;
+}
 
 .modal{
     background-color: white;
@@ -507,31 +516,61 @@ position: relative;
   background-color: white;
   padding: 0.3em 2em 0.3em 2em;
   position: relative;
-  margin: 5% 0 5% 0;
+  margin: 10% 0 15% 0;
 }
 
 
-.add{
-  cursor: pointer;
-  margin: 5% 0 0% 0;
-  z-index: 1;
+.add {
+    cursor: pointer;
+    margin: 5% 0 0% 0;
+    z-index: 1;
+    font-family: 'roboto';
+    font-weight: 100;
+    font-size: 1.5em;
+    background-color: #2F80ED;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 50%;
+    color: white;
 }
 .stageTitle{
     font-size: 1.4em;
-    margin: 0.5em 0 0.25em 0;
+    margin: 0.5em 2em 0.5em 0;
     display: inline-block;
 }
 
 .stageText{
-    width: 70%;
+    width: 60%;
     margin-top: 0em;
+    display: inline-block
 }
 
-.down{
-      right: 1em;
-    bottom: 0.7em;
-    display: inline;
-    position: absolute;
+.noMargin{
+  margin-top: 0;
+  margin-bottom: 0.3em;
+  font-size: 1.3em;
+}
+
+.bottomStage{
+  display: flex
+}
+
+.stageItems{
+    color: rgb(86, 204, 242);
+    list-style-type: none;
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 0.8em;
+        display: inline-block;
+    /* float: right; */
+    position: relative;
+    /* right: 30%; */
+    /* top: 40%; */
+    margin-top: -0.5em;
 }
 
 .tag{
@@ -543,12 +582,16 @@ position: relative;
     font-size: 0.6em;
     font-weight: lighter;
     position: relative;
-    left: 2%;
-    top: -0.5em;
     z-index: 2;
     color: white;
+        margin-left: 3em;
 }
 
+.topContent{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 
 
@@ -712,8 +755,7 @@ input:focus ~ .highlight {
 }
 
 .method{
-    display: inline-block;
-    position: relative;
+    display: block;
     width: 35%;
     /* height: 35%; */
     background-color: white;
@@ -721,10 +763,113 @@ input:focus ~ .highlight {
     -moz-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.25);
     box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.25);
     padding: 1% 2% 1% 2%;
+    position: relative;
+    clear: both;
+    z-index: 2;
 }
 
+.methodContainer{
+      position: relative;
+    display: flex;
+    background: transparent;
+}
+
+.methodContainer:nth-child(even){
+  justify-content: flex-start;
+}
+
+.methodContainer:nth-child(odd){
+  justify-content: flex-end;
+  bottom: 60px;
+}
 .methodTitle{
   font-size: 1.2em;
-  margin-bottom: 0.2em;
   display: inline;
 }
+
+.inquiry{
+    font-family: 'roboto';
+    font-size: 0.8em;
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0.3em;
+    color: white;
+    background-color: #F2C94C;
+    margin-left: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonMethod{
+      position: relative;
+    padding: 2.5% 3% 2.5% 3%;
+    background-color: white;
+    border-radius: 35px;
+    color: white;
+    font-size: 0.8em;
+    font-family: 'roboto';
+    color: #F7F3F3;
+    font-weight: 300;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    width: 40%;
+    text-align: center;
+    color: #0D78D2;
+    border: 1px solid #0D78D2;
+    margin: 2% 3% 3% 0;
+}
+
+.buttonMethod:hover{
+  color: white;
+  background-color: #0D78D2;
+  transition: none;
+}
+
+.buttonGroupMethod{
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    margin-top: 0.5em;
+    align-items: center;
+}
+
+.items{
+    margin: 0;
+    padding: 0;
+    color: #56CCF2;
+    list-style-type: none;
+    font-family: 'roboto';
+    font-weight: 300;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+
+}
+
+.files{
+  margin-bottom: 0.3em;
+}
+
+.down{
+  background-color: #0D78D2;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.create{
+  
+  margin-right: 1em;
+}
+.miniButton{
+      display: inline-flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 30%;
+    background-color: transparent;
+    bottom: 20px;
+    right: 25px;
+}
+

@@ -59,6 +59,17 @@ export default class Tree extends React.Component {
     this.setState({boxesTag: boxesList})
   }
 
+
+newStepModalRender(){
+  if (this.state.showModal === true){
+    document.getElementsByTagName("body")[0].style.overflowY = "hidden"
+    return (<NewStepModal boxesOptions={this.state.boxesOptions} addNewBoxOption={this.addNewBoxOption.bind(this)} renderNewBoxes={this.renderNewBoxes.bind(this)} newStepToggle={this.newStep.bind(this)}/>)
+  }
+  else{
+    document.getElementsByTagName("body")[0].style.overflowY = "scroll"
+    return (null)
+  }
+}
   // renderKeyedBoxes(boxesList){
   //   for (var i=0; i<boxesList.length); i++){
 
@@ -93,9 +104,8 @@ export default class Tree extends React.Component {
             </div>
             {this.state.boxesTag}
             <Add showModal={this.newStep.bind(this)}/>
-            {this.state.showModal ? <NewStepModal boxesOptions={this.state.boxesOptions} addNewBoxOption={this.addNewBoxOption.bind(this)} renderNewBoxes={this.renderNewBoxes.bind(this)} newStepToggle={this.newStep.bind(this)}/> : null}
           </div>
-        
+        {this.newStepModalRender()}
         </div>
      </div>
     )

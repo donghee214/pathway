@@ -31,10 +31,10 @@ export default class MyTeam extends React.Component {
 	    	</div>
 
 	      <div className="cardView">
-	        <Card />
-	        <Card />
-	        <Card />
-	        <Card />
+	        <Card changeBody={this.props.changeBody} />
+	        <Card changeBody={this.props.changeBody} />
+	        <Card changeBody={this.props.changeBody} />
+	        <Card changeBody={this.props.changeBody} />
 	      </div>
       </div>
     )

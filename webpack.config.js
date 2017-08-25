@@ -17,8 +17,9 @@ loaders.push({
 
 module.exports = {
   entry: [
-    'react-hot-loader/patch',
-    './src/index.jsx', // your app's entry point
+    "webpack-dev-server/client?http://127.0.0.0:8080",
+    "webpack/hot/only-dev-server",
+    "./src/index.jsx"
   ],
   devtool: process.env.WEBPACK_DEVTOOL || 'eval-source-map',
   output: {
